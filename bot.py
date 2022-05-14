@@ -3,8 +3,8 @@ import telebot
 from telebot import types
 import os
 
-token = "TOKEN"
-bot = telebot.TeleBot(token)
+from env import Bot_token
+bot = telebot.TeleBot(Bot_token)
 
 
 @bot.message_handler(commands=['go', 'start'])  # Обработка команды для старта
